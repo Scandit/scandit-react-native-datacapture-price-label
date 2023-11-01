@@ -1,0 +1,1 @@
+ScanditPriceLabelCapture implements the price label capture capabilities of the Scandit Data Capture SDK.
