@@ -59,10 +59,11 @@ android {
 }
 
 dependencies {
-    def sdk_version = "6.20.0"
+    def sdk_version = "6.19.6"
 
     println("Version of the native sdk used in this build: ${safeExtGet('global_sdk_version', sdk_version)}")
     api "com.scandit.datacapture:price-label:${safeExtGet('global_sdk_version', sdk_version)}"
+    api "com.scandit.datacapture:label-text-models:${safeExtGet('global_sdk_version', sdk_version)}"
 
     // For < 0.71, this will be from the local maven repo
     // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
