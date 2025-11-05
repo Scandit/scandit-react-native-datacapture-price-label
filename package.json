@@ -1,6 +1,6 @@
 {
   "name": "scandit-react-native-datacapture-price-label",
-  "version": "7.2.5",
+  "version": "7.6.4",
   "description": "Scandit Data Capture SDK for React Native",
   "homepage": "https://github.com/Scandit/scandit-react-native-datacapture-price-label",
   "main": "index.js",
