@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
   s.homepage                = package["homepage"]
   s.license                 = package["license"]
   s.authors                 = { package["author"]["name"] => package["author"]["email"] }
-  s.platforms               = { :ios => "15.0" }
+  s.platforms               = { :ios => "14.0" }
   s.source                  = { :git => package["homepage"] + ".git", :tag => "#{s.version}" }
   s.swift_version           = '5.0'
   s.requires_arc            = true
   s.module_name             = "ScanditPriceLabelCaptureCore"
   s.header_dir              = "ScanditPriceLabelCaptureCore"
-  s.dependency 'ScanditPriceLabel', '= 8.1.1'
+  s.dependency 'ScanditPriceLabel', '= 7.4.5'
   s.source_files            = "ios/Sources/**/*.{h,m,swift}"
   s.dependency "React"
 end
