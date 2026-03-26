@@ -1,15 +1,11 @@
 {
   "name": "scandit-react-native-datacapture-price-label",
-  "version": "8.1.3",
+  "version": "8.3.0",
   "description": "Scandit Data Capture SDK for React Native",
   "homepage": "https://github.com/Scandit/scandit-react-native-datacapture-price-label",
   "main": "index.js",
-  "scripts": {
-    "test": "pnpm run lint",
-    "lint": "echo 'scandit-react-native-datacapture-price-label does not have TS files to lint'",
-    "build": "echo 'scandit-react-native-datacapture-price-label does not have TS files to build'",
-    "start": "pnpm run build -- --watch"
-  },
+  "flow": "index.js.flow",
+  "scripts": {},
   "keywords": [
     "scandit",
     "react-native"
