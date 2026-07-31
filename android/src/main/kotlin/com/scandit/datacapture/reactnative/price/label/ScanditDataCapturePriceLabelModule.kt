@@ -7,10 +7,16 @@ package com.scandit.datacapture.reactnative.price.label
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.module.annotations.ReactModule
 
+@ReactModule(name = ScanditDataCapturePriceLabelModule.NAME)
 class ScanditDataCapturePriceLabelModule(
-    private val reactContext: ReactApplicationContext
+    reactContext: ReactApplicationContext
 ) : ReactContextBaseJavaModule(reactContext) {
 
-    override fun getName(): String = "ScanditDataCapturePriceLabel"
+    companion object {
+        const val NAME = "ScanditDataCapturePriceLabel"
+    }
+
+    override fun getName(): String = NAME
 }
