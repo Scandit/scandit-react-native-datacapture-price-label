@@ -5,12 +5,12 @@
  */
 package com.scandit.datacapture.reactnative.price.label
 
-import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
+import com.scandit.datacapture.reactnative.core.ScanditReactPackageBase
 
-class ScanditDataCapturePriceLabelPackage : ReactPackage {
+class ScanditDataCapturePriceLabelPackage : ScanditReactPackageBase() {
     override fun createNativeModules(
         reactContext: ReactApplicationContext
     ): MutableList<NativeModule> = mutableListOf(ScanditDataCapturePriceLabelModule(reactContext))
@@ -18,4 +18,7 @@ class ScanditDataCapturePriceLabelPackage : ReactPackage {
     override fun createViewManagers(
         reactContext: ReactApplicationContext
     ): MutableList<ViewManager<*, *>> = mutableListOf()
+
+    override fun getModuleClasses(): List<Class<out NativeModule>> =
+        listOf(ScanditDataCapturePriceLabelModule::class.java)
 }
