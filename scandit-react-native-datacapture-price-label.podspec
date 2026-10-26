@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
   s.module_name             = "ScanditPriceLabelCaptureCore"
   s.header_dir              = "ScanditPriceLabelCaptureCore"
-  s.dependency 'ScanditPriceLabel', '= 8.5.4'
+  s.dependency 'ScanditPriceLabel', '= 8.6.2'
   s.source_files            = "ios/Sources/**/*.{h,m,swift}"
   s.dependency "React"
 end
